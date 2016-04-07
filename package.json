@@ -1,0 +1,51 @@
+{
+  "name": "Comma separated values",
+  "version": "0.0.1",
+  "description": "Comma separated values",
+  "main": "csv.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start --single-run",
+    "testf": "open ./vendor/index.html",
+    "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o vendor/chai.js",
+    "sinon": "curl http://sinonjs.org/releases/sinon-1.12.2.js -o vendor/sinon-1.17.3.js",
+    "karma": "node_modules/karma/bin/karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aluXXXXXXX/STW03.git"
+  },
+  "keywords": [
+    "comma",
+    "mocha",
+    "chai",
+    "sinon",
+    "testing",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aluXXXXXXX/STW03/issues"
+  },
+  "homepage": "https://github.com/aluXXXXXXX/STW03",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-minify": "0.0.5",
+    "gulp-uglify": "^1.5.3",
+    "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
+    "karma-chai-plugins": "^0.7.0",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-mocha": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.6"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "del": "^2.2.0",
+    "mocha": "^2.4.5"
+  }
+}
