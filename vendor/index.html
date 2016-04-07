@@ -5,8 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mocha.css" />
+    <script src="mocha.js"></script>
+    <script src="chai.js"></script>
+    <script src="blanket.js" data-cover-adapter="vendor/mocha-blanket.js" data-cover-flags="debug"></script>
+    <script src="sinon-1.17.3.js"></script>
+    <script src="../csv.js"></script>
   </head>
   <body>
+
     <div id="mocha"></div>
     <script src="mocha.js"></script>
     <script>mocha.setup('bdd');</script>
