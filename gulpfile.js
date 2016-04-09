@@ -28,7 +28,7 @@ gulp.task('default', ['minify-js', 'minify-css', 'minify-html'], function() {
 });
 
 gulp.task('minify-js', function() {
-  gulp.src(['vendor/*.js', '*.js'])
+  gulp.src(['public/vendor/*.js', 'public/js/*.js'])
     .pipe(minify({
         exclude: ['tasks'],
         ignoreFiles: ['.combo.js', '-min.js']
@@ -37,7 +37,7 @@ gulp.task('minify-js', function() {
 });
 
 gulp.task('minify-css', function() {
-  return gulp.src(['css/*.css','vendor/*.css'])
+  return gulp.src(['public/css/*.css','public/vendor/*.css'])
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('minified'));
 })
