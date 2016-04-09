@@ -1,7 +1,7 @@
 var expect = chai.expect;
 
 describe("CSV", function(){
-  describe("Funcion Calculate", fucnction(){
+  describe("Funcion Calculate", function(){
     it("Deberia reconocer una cadena simple", function(){
       var cadena = '"hola"';
       var r = calculate(cadena);
@@ -14,7 +14,7 @@ describe("CSV", function(){
       expect(r[0].value[0]).to.equal('hola');
     });
 
-    it("Deberia reconocer un float con coma", fucnction(){
+    it("Deberia reconocer un float con coma", function(){
       var cadena = '"1,5"';
       var r = calculate(cadena);
       expect(r[0].value[0]).to.equal('hola');
